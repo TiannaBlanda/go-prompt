@@ -1,4 +1,4 @@
-package prompt
+package*prompt
 
 func dummyExecutor(in string) {}
 
@@ -41,3 +41,4 @@ func newChoiceCompleter(choices []string, filter Filter) Completer {
 		return filter(s, x.GetWordBeforeCursor(), true)
 	}
 }
+ 
